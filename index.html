@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yash Eknath Bachhe - Personal Portfolio</title>
+</head>
+<body>
+    <div class="navbar">
+        <span class="menu-icon" onclick="toggleSidebar()">☰</span>
+        <a href="#home" onclick="showSection('home')">Home</a>
+        <a href="#about" onclick="showSection('about')">About Me</a>
+        <a href="#education" onclick="showSection('education')">Education</a>
+        <a href="#projects" onclick="showSection('projects')">Projects</a>
+        <a href="#strengths" onclick="showSection('strengths')">Strengths</a>
+        <a href="#interests" onclick="showSection('interest')">Interest</a>
+        <a href="#skills" onclick="showSection('skills')">Skills</a>
+        <a href="#references" onclick="showSection('references')">References</a>
+    </div>
+
+    <div class="sidebar" id="sidebar">
+        <span class="close-icon" onclick="toggleSidebar()">×</span>
+        <a href="#home" onclick="showSection('home')">Home</a>
+        <a href="#about" onclick="showSection('about')">About Me</a>
+        <a href="#education" onclick="showSection('education')">Education</a>
+        <a href="#projects" onclick="showSection('projects')">Projects</a>
+        <a href="#strengths" onclick="showSection('strengths')">Strengths</a>
+        <a href="#interests" onclick="showSection('interest')">Interest</a>
+        <a href="#skills" onclick="showSection('skills')">Skills</a>
+        <a href="#references" onclick="showSection('references')">References</a>
+    </div>
+
+    <div class="content" id="content">
+        <section id="home" class="active">
+            <div class="header">
+                <img src="ProfilePic.jpg" alt="Profile Photo" height="300" width="300">
+                <h3>Yash Eknath Bachhe</h3>
+                <h3>DOB: 09-Jan-2003</h3>
+                <h3>7083027310</h3>
+                <h3><a href="mailto:yashbachhe09@gmail.com">yashbachhe09@gmail.com</a></h3>
+                <h3><a href="https://www.linkedin.com/in/yashbachhe" target="_blank">LinkedIn</a></h3>
+                <h3><a href="https://github.com/yashbachhe09" target="_blank">Github</a></h3>
+                <h3>Row house no. 72, Sai yash, Shankar Nagar, Kopargaon Tal- Kopargaon Dist: Ahmednagar pin-423601</h3>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                As an individual looking to pursue a job opportunity in a competitive environment, I aim to be challenged
+                to push boundaries and expand knowledge in the field of computer science, all while striving to add value to the dynamic of the company.
+                I am a dedicated Computer Science student with a passion for solving complex problems and exploring new technologies.
+                Currently pursuing a degree in Computer Science, I have a strong foundation in programming and software development.
+            </p>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <p><strong>Sanjivani College of Engineering:</strong> SPPU</p>
+            <p><strong>B.Tech:</strong> Computer Science</p>
+            <p><strong>Completion Year:</strong> 2025</p>
+
+            <p><strong>SSGM College, Kopargaon:</strong> SPPU</p>
+            <p><strong>HSC:</strong> 89.83%</p>
+            <p><strong>Completion Year:</strong> 2021</p>
+
+            <p><strong>Shri Sharda English Medium School, Kopargaon:</strong> SPPU</p>
+            <p><strong>SSC:</strong> 81.20%</p>
+            <p><strong>Completion Year:</strong> 2019</p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <p><strong>Tourism Management System using HTML, CSS, JavaScript:</strong> A website designed to showcase various tourist destinations around the world, providing comprehensive information about each location, including attractions, accommodations, activities, and travel tips.</p>
+
+            <p><strong>Voice Mail for Blind Persons using Python:</strong> A system designed to make communication easier for visually impaired persons by enabling them to send emails through voice commands.</p>
+
+            <p><strong>IoT Based Onion Quality Monitoring System:</strong> A real-time monitoring system using IoT to track temperature, humidity, and methane gas levels during the storage and transport of onions, reducing spoilage and optimizing resource use.</p>
+
+            <p><strong>Diabetes Identification and Forecasting through Data Analysis:</strong> A project utilizing logistic regression methods to predict the likelihood of diabetes in individuals by analyzing various health indicators such as age, BMI, and glucose levels.</p>
+        </section>
+
+        <section id="strengths">
+            <h2>Strengths</h2>
+            <p>Good ability of thinking.</p>
+            <p>Helping nature for society.</p>
+            <p>Easily get connected with people.</p>
+        </section>
+
+        <section id="interest">
+            <h2>Interests</h2>
+            <p>Traveling</p>
+            <p>Photography</p>
+            <p>Planting Trees</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <h3>Full Stack Web Development</h3>
+            <p>1. Web Development: HTML, CSS, JavaScript, UI/UX, Angular JS</p>
+            <p>2. Basic knowledge of MySQL and NoSQL Databases</p>
+            <h3>Others</h3>
+            <p>1. Hands-on experience in Python</p>
+            <p>2. Practical understanding of C, C++, and data structures</p>
+            <p>3. Good communication and collaboration skills, with the ability to quickly grasp new technical concepts and apply them productively</p>
+        </section>
+
+        <section id="references">
+            <h2>References</h2>
+            <p>
+                Dr. D. B. Kshirsagar, HOD, Sanjivani COE<br>
+                Dr. B. J. Dange, Mentor, Sanjivani COE
+            </p>
+        </section>
+    </div>
+    <style>
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateX(-100%); }
+            to { transform: translateX(0); }
+        }
+
+        @keyframes slideOut {
+            from { transform: translateX(0); }
+            to { transform: translateX(-100%); }
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f0f8ff;
+            color: #333;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #34dbb7;
+            color: white;
+            padding: 10px 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .navbar a:hover {
+            background-color: aquamarine;
+            border-radius: 4px;
+        }
+
+        .navbar .menu-icon {
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .sidebar {
+            width: 250px;
+            background-color: #2c3e50;
+            color: white;
+            position: fixed;
+            height: 100%;
+            top: 0;
+            left: -250px;
+            padding: 20px;
+            overflow-y: auto;
+            transition: left 0.3s;
+            animation: slideOut 0.3s forwards;
+        }
+
+        .sidebar.active {
+            left: 0;
+            animation: slideIn 0.3s forwards;
+        }
+
+        .sidebar .close-icon {
+            display: block;
+            font-size: 24px;
+            cursor: pointer;
+            text-align: right;
+            margin-bottom: 10px;
+        }
+
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 10px 0;
+            transition: background-color 0.3s;
+        }
+
+        .sidebar a:hover {
+            background-color: #34495e;
+            border-radius: 4px;
+        }
+
+        .content {
+            margin-left: 20px;
+            padding: 20px;
+            transition: margin-left 0.3s;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        .content.shift {
+            margin-left: 270px;
+        }
+
+        .header {
+            background-color: #34dbb7;
+            color: #fff;
+            padding: 20px;
+            border-radius: 8px 8px 0 0;
+            text-align: center;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        .header img {
+            border-radius: 50%;
+            margin-bottom: 10px;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .header h3, .header a {
+            margin: 5px 0;
+        }
+
+        .header a {
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .header a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            display: none;
+            margin-bottom: 30px;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        section.active {
+            display: block;
+        }
+
+        h2 {
+            color: rgb(43, 198, 172);
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .navbar .menu-icon {
+                display: block;
+            }
+
+            .navbar a {
+                display: none;
+            }
+        }
+
+        nav {
+            background-color: rgb(43, 226, 205);
+            box-shadow: 3px 3px 5px rgba(0, 0, 0, 1);
+        }
+
+        nav ul {
+            width: 100%;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        nav li {
+            height: 50px;
+        }
+
+        nav a {
+            height: 100%;
+            padding: 0 30px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            color: black;
+        }
+
+        nav a:hover {
+            background-color: rgb(0, 255, 204);
+        }
+
+        nav li:first-child {
+            margin-right: auto;
+        }
+
+        .sidebar {
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: 100vh;
+            width: 250px;
+            z-index: 999;
+            background-color: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+            display: none;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            background-color: rgba(17, 149, 105, 0.857);
+        }
+
+        .sidebar.active {
+            display: flex;
+        }
+
+        .sidebar li {
+            width: 100%;
+        }
+
+        @media (max-width: 800px) {
+            .hideOnMobile {
+                display: none;
+            }
+        }
+    </style>
+    <script>
+        function toggleSidebar() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('active');
+        }
+
+        function showSection(sectionId) {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(sectionId).classList.add('active');
+            if (window.innerWidth <= 768) {
+                toggleSidebar(); // Close the sidebar when a section is selected on mobile
+            }
+        }
+
+        // Set home section as default visible
+        document.getElementById('home').classList.add('active');
+    </script>
+</body>
+</html>
